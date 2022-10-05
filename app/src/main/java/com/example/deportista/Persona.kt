@@ -7,10 +7,8 @@ open class Persona (var nombre: String, var estatura: Float, var peso: Float, va
         println(descansar)
     }
 }
-class Runner (var estilo: String, var velocidad: Int){
+class Runner (nombre: String, estatura: Float, peso: Float, edad: Int, var estilo: String, var velocidad: Int): Persona(nombre ,estatura ,peso ,edad){
     fun correr() {
-        /*var estilo: String
-        var velocidad: Int*/
         println("Estilo : $estilo")
         println("Velocidad : $velocidad")
     }

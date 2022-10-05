@@ -17,7 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         println("-------------")
 
-        var b : Runner = Runner(estilo = "Maraton", velocidad = 25)
+        var b : Runner = Runner(nombre = "Marc", estatura =1.89f, peso = 88f, edad = 28 ,estilo = "Maraton", velocidad = 25)
+        println(b.nombre)
+        println(b.estatura)
+        println(b.peso)
+        println(b.edad)
         println(b.correr())
     }
 }
