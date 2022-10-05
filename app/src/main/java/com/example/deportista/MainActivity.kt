@@ -8,20 +8,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var a : Persona = Persona (nombre = "Marcelo", estatura = 1.90f, peso = 90f, edad = 30)
+        var a : Persona = Persona (nombre = "Marcelo", estatura = 1.90f, peso = 90, edad = 30)
         println("Nombre "+ a.nombre)
-        println(a.estatura)
-        println(a.peso)
-        println(a.edad)
+        println("Estatura "+ a.estatura)
+        println("Peso "+ a.peso)
+        println("Edad "+ a.edad)
         println(a.descanso())
 
         println("-------------")
 
-        var b : Runner = Runner(nombre = "Marc", estatura =1.89f, peso = 88f, edad = 28 ,estilo = "Maraton", velocidad = 25)
-        println(b.nombre)
-        println(b.estatura)
-        println(b.peso)
-        println(b.edad)
+        var b : Runner = Runner(nombre = "Marc", estatura =1.89f, peso = 88, edad = 28 ,estilo = "Maraton", velocidad = 25)
+        println("Nombre "+ b.nombre)
+        println("Estatura "+ b.estatura)
+        println("Peso "+ b.peso)
+        println("Edad "+ b.edad)
         println(b.correr())
+
+        println("-------------")
     }
 }

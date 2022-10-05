@@ -1,13 +1,13 @@
 package com.example.deportista
 
 
-open class Persona (var nombre: String, var estatura: Float, var peso: Float, var edad: Int){
+open class Persona (var nombre: String, var estatura: Float, var peso: Int, var edad: Int){
     fun descanso () {
         var descansar: String = "Descansar"
         println(descansar)
     }
 }
-class Runner (nombre: String, estatura: Float, peso: Float, edad: Int, var estilo: String, var velocidad: Int): Persona(nombre ,estatura ,peso ,edad){
+class Runner (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo: String, var velocidad: Int): Persona(nombre ,estatura ,peso ,edad){
     fun correr() {
         println("Estilo : $estilo")
         println("Velocidad : $velocidad")
