@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         println("-------------")
 
+        var competir = competir()
         var b : Runner = Runner(nombre = "Miguel", estatura =1.89f, peso = 88, edad = 28 ,estilo = "Maraton", velocidad = 25)
         println("Runner")
         println("Nombre "+ b.nombre)
