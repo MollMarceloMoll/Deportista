@@ -12,20 +12,16 @@ class Runner (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo:
         println("Estilo : $estilo")
         println("Velocidad : $velocidad")
     }
-}/*
-class Ciclista (var tipoDeBici: String, var velocidad: Int): Persona(nombre,estatura,peso,edad){
+}
+class Ciclista (nombre: String, estatura: Float, peso: Int, edad: Int, var tipoDeBici: String, var velocidad: Int): Persona(nombre,estatura,peso,edad){
     fun peladear () {
-        var tipoDeBici = "Todo terreno"
-        var velocidad = 50
         println("Tipo de Bicicleta : $tipoDeBici")
         println("Velocidad : $velocidad")
     }
 }
-class Nadador (var estilo: String, var velocidad: Int): Persona(nombre,estatura,peso,edad){
+class Nadador (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo: String, var velocidad: Int): Persona(nombre,estatura,peso,edad){
     fun nadar () {
-        var estilo = "Braza"
-        var velocidad = 10
         println("Estilo : $estilo")
         println("Velocidad : $velocidad")
     }
-}*/
+}
