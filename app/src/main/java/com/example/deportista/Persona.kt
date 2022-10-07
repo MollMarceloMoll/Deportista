@@ -25,8 +25,8 @@ class Nadador (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo
         println("Velocidad : $velocidad")
     }
 }
-fun competir () {
-    var a: String = "Voy a Correr"
-    var b: String = "Voy a Peladear"
-    var c: String = "Voy a Nadar"
+fun competir (var a: String, var b: String, var c: String) {
+     a  = "Voy a Correr"
+     b  = "Voy a Peladear"
+     c  = "Voy a Nadar"
 }
