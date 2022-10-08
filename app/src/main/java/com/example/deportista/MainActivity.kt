@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         println(d.nadar())
 
         var competir = competir()
-        println(competir.a)
+        println(competir)
+
     }
 }

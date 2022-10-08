@@ -1,5 +1,7 @@
 package com.example.deportista
 
+import java.util.*
+
 
 open class Persona (var nombre: String, var estatura: Float, var peso: Int, var edad: Int){
     fun descanso () {
@@ -25,8 +27,9 @@ class Nadador (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo
         println("Velocidad : $velocidad")
     }
 }
-fun competir (var a: String, var b: String, var c: String) {
-     a  = "Voy a Correr"
-     b  = "Voy a Peladear"
-     c  = "Voy a Nadar"
+fun competir () {
+    var competicion : Array<String> = arrayOf("Voy a Correr","Voy a Peladear","Voy a Nadar")
+    for (i in competicion) {
+        println(i)
+    }
 }
