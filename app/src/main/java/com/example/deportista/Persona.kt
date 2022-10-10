@@ -32,7 +32,4 @@ fun competir () {
     for (i in competicion) {
         println(i)
     }
-    println(competicion[0])
-    println(competicion[1])
-    println(competicion[2])
 }
