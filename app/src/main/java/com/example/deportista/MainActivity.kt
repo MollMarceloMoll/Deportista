@@ -46,8 +46,7 @@ class MainActivity : AppCompatActivity() {
         println("Edad "+ c.edad)
         println(d.nadar())
 
-        var competir = competir()
-        println(competir)
+        var triatle: Triatleta = Triatleta("Mack",1.90f,92,27,"Libre", 20, 50, 15)
 
     }
 }

@@ -27,9 +27,43 @@ class Nadador (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo
         println("Velocidad : $velocidad")
     }
 }
-fun competir () {
-    var competicion : Array<String> = arrayOf("Voy a Correr","Voy a Peladear","Voy a Nadar")
-    for (i in competicion) {
-        println(i)
+interface Corredor {
+    var esstilo: String
+    var corredorVelocidad: Int
+    fun corriendo ()  : String {
+        return "Corriendo"
+    }
+}
+interface Ciclismo {
+    var tipoDeBici: String
+    var ciclismoVelocidad: Int
+    fun ciclista (): String {
+        return "Peladeando"
+    }
+}
+interface Nadar {
+    var estilo: String
+    var nadarVelocidad: Int
+    fun nadador (): String {
+        return "Nadando"
+    }
+}
+
+abstract class Triatleta (nombre: String, estatura: Float, peso: Int, edad: Int,
+                         override var estilo: String,
+                         override var corredorVelocidad: Int,
+                         override var ciclismoVelocidad: Int,
+                override var nadarVelocidad: Int,
+                ) :Persona(nombre,estatura,peso,edad), Corredor, Ciclismo,Nadar{
+    override fun corriendo(): String {
+        return super.corriendo()
+    }
+
+    override fun ciclista(): String {
+        return super.ciclista()
+    }
+
+    override fun nadador(): String {
+        return super.nadador()
     }
 }
