@@ -28,7 +28,7 @@ class Nadador (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo
     }
 }
 interface Corredor {
-    var esstilo: String
+    var estilo: String
     var corredorVelocidad: Int
     fun corriendo ()  : String {
         return "Corriendo"
@@ -49,11 +49,12 @@ interface Nadar {
     }
 }
 
-abstract class Triatleta (nombre: String, estatura: Float, peso: Int, edad: Int,
-                         override var estilo: String,
-                         override var corredorVelocidad: Int,
-                         override var ciclismoVelocidad: Int,
-                override var nadarVelocidad: Int,
+class Triatleta (nombre: String, estatura: Float, peso: Int, edad: Int,
+                 override var estilo: String,
+                 override var corredorVelocidad: Int,
+                 override var ciclismoVelocidad: Int,
+                 override var nadarVelocidad: Int,
+                 override var tipoDeBici: String,
                 ) :Persona(nombre,estatura,peso,edad), Corredor, Ciclismo,Nadar{
     override fun corriendo(): String {
         return super.corriendo()

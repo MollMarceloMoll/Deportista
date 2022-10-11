@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var a : Persona = Persona (nombre = "Marcelo", estatura = 1.90f, peso = 90, edad = 30)
+        var a : Persona = Persona ("Marcelo", 1.90f, 90, 30)
         println("Deportista")
         println("Nombre "+ a.nombre)
         println("Estatura "+ a.estatura)
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         println("-------------")
 
-        var b : Runner = Runner(nombre = "Miguel", estatura =1.89f, peso = 88, edad = 28 ,estilo = "Maraton", velocidad = 25)
+        var b : Runner = Runner("Miguel", 1.89f, 88, 28, "Maraton", 25)
         println("Runner")
         println("Nombre "+ b.nombre)
         println("Estatura "+ b.estatura)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         println("-------------")
 
-        var c : Ciclista = Ciclista(nombre = "Sebastian", estatura = 1.80f, peso = 80, edad = 25, tipoDeBici = "Todo Terreno", velocidad = 50)
+        var c : Ciclista = Ciclista("Sebastian", 1.80f, 80, 25, "Todo Terreno", 50)
         println("Ciclista")
         println("Nombre "+ c.nombre)
         println("Estatura "+ c.estatura)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         println("-------------")
 
-        var d : Nadador = Nadador(nombre = "Mauricio", estatura = 1.85f, peso = 82, edad = 28, estilo = "Libre", velocidad = 10)
+        var d : Nadador = Nadador("Mauricio", 1.85f, 82, 28, "Libre", 10)
         println("Nadador")
         println("Nombre "+ d.nombre)
         println("Estatura "+ d.estatura)
@@ -46,7 +46,23 @@ class MainActivity : AppCompatActivity() {
         println("Edad "+ c.edad)
         println(d.nadar())
 
-        var triatle: Triatleta = Triatleta("Mack",1.90f,92,27,"Libre", 20, 50, 15)
+        println("-------------")
+
+        var triatleta: Triatleta = Triatleta("Mack",1.90f,92,27,"Libre", 20, 50, 15,
+        "Todo Terreno")
+
+        println("Triatleta")
+        println("Nombre "+ triatleta.nombre)
+        println("Estatura "+ triatleta.estatura)
+        println("Peso "+ triatleta.peso)
+        println("Edad "+ triatleta.edad)
+        println("Estilo "+ triatleta.estilo)
+        println("Esta "+ triatleta.corriendo())
+        println("Corre a pie "+ triatleta.corredorVelocidad)
+        println("Esta "+ triatleta.ciclista())
+        println("Corre en bicicleta a "+ triatleta.ciclismoVelocidad)
+        println("Esta "+ triatleta.nadador())
+        println("Nada a "+ triatleta.nadarVelocidad)
 
     }
 }
