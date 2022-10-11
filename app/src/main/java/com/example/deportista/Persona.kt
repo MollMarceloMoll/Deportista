@@ -16,7 +16,7 @@ class Runner (nombre: String, estatura: Float, peso: Int, edad: Int, var estilo:
     }
 }
 class Ciclista (nombre: String, estatura: Float, peso: Int, edad: Int, var tipoDeBici: String, var velocidad: Int): Persona(nombre,estatura,peso,edad){
-    fun peladear () {
+    fun pedalear () {
         println("Tipo de Bicicleta : $tipoDeBici")
         println("Velocidad : $velocidad")
     }
@@ -38,7 +38,7 @@ interface Ciclismo {
     var tipoDeBici: String
     var ciclismoVelocidad: Int
     fun ciclista (): String {
-        return "Peladeando"
+        return "Pedaleando"
     }
 }
 interface Nadar {

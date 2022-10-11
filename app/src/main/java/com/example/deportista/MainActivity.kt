@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         println("Estatura "+ c.estatura)
         println("Peso "+ c.peso)
         println("Edad "+ c.edad)
-        println(c.peladear())
+        println(c.pedalear())
 
         println("-------------")
 
