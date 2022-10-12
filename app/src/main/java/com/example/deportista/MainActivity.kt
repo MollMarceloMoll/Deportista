@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         println("Peso "+ b.peso)
         println("Edad "+ b.edad)
         println(b.correr())
+        println(b.descanso())
 
         println("-------------")
 
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         println("Peso "+ c.peso)
         println("Edad "+ c.edad)
         println(c.pedalear())
+        println(c.descanso())
 
         println("-------------")
 
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         println("Peso "+ d.peso)
         println("Edad "+ c.edad)
         println(d.nadar())
+        println(d.descanso())
 
         println("-------------")
 
@@ -63,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         println("Corre en bicicleta a "+ triatleta.ciclismoVelocidad)
         println("Esta "+ triatleta.nadador())
         println("Nada a "+ triatleta.nadarVelocidad)
+        println(triatleta.descanso())
 
     }
 }
